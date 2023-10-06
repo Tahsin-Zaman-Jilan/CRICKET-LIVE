@@ -16,10 +16,10 @@ const App = () => {
       // Your fetch logic here
       // For example, you can fetch data from an API like this:
      
-       
+      const api = process.env.REACT_APP_CRIC_API_KEY;
 
       
-      fetch("https://api.cricapi.com/v1/currentMatches?apikey=f7a8b179-d762-4e69-8081-02fae36d94fc&offset=0")
+      fetch(`https://api.cricapi.com/v1/currentMatches?apikey=${api}&offset=0`)
         .then((response) => response.json())
         .then((data) => {
           if (data.data) {
@@ -68,7 +68,7 @@ const App = () => {
         .catch((error) => {
           console.error("Error fetching data:", error);
         });
-    }, 3000); // Wait for 3 seconds
+    }, 2000); // Wait for 3 seconds
   };
   
 
