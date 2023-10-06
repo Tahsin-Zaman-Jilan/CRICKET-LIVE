@@ -68,7 +68,7 @@ const App = () => {
         .catch((error) => {
           console.error("Error fetching data:", error);
         });
-    }, 2000); // Wait for 3 seconds
+    }, 1500); // Wait for 3 seconds
   };
   
 
