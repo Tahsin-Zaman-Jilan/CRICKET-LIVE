@@ -1,38 +1,123 @@
-.App {
-  text-align: center;
+/* App.css */
+/* Existing styles */
+
+/* Styles for the match result boxes */
+body {
+  background-color: #4CAF50; /* Green background color, you can choose a different color if you prefer */
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  /* White text color */
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+
+.match-box {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    margin: 20px 0;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
+  
+  .match-box h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .match-box p {
+    font-size: 18px;
+  }
+  
+  .team-logo {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin: 10px;
+  }
+  
+  .team-info {
+    display: flex;
+    align-items: center;
+  }
+  
+  .team-info img {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+  }
+  
+  .team-info span {
+    font-weight: bold;
+  }
+  
+  /* Styles for the score information */
+  .score-info {
+    margin-top: 20px;
+    text-align: center;
+    background-color: #f7f7f7;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 10px;
+  }
+  
+  .score-info p {
+    font-size: 16px;
+    margin: 5px 0;
+  }
+  /* App.css */
+/* App.css */
+.button {
+  background-color: #3490dc;
+  color: #fff;
+  font-weight: bold;
+  padding: 20px 40px; /* Increase padding for a larger button */
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.button:hover {
+  background-color: #2779bd;
+}
+
+/* App.css */
+.search-input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+
+/* App.css */
+.search-button {
+  padding: 10px 20px;
+  background-color: #3490dc;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-left: 10px;
+}
+
+.search-button:hover {
+  background-color: #2779bd;
+}
+
+.loader-container {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  height: 100vh;
 }
 
-.App-link {
-  color: #61dafb;
+.big-loader {
+  transform: scale(5); /* Adjust the scale factor as needed to make it bigger */
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
